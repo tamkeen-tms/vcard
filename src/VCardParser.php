@@ -195,7 +195,9 @@ class VCardParser implements Iterator
                     }
                     $i++;
                 }
-
+                
+                $cardData = new \stdClass();
+                
                 switch (strtoupper($element)) {
                     case 'FN':
                         $cardData->fullname = $value;
